@@ -117,6 +117,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,13 +141,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="EditingMode.cpp" />
+    <ClCompile Include="src\Application.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="TextEditor.cpp" />
+    <ClCompile Include="src\TextEditor.cpp" />
+    <ClCompile Include="src\extern\ErrorExit.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="EditingMode.h" />
-    <ClInclude Include="TextEditor.h" />
+    <ClInclude Include="src\Application.h" />
+    <ClInclude Include="src\TextEditor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
